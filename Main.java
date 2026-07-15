@@ -4,7 +4,8 @@ public class Main {
 int BankNum, PinCode;
 double UserBal;
 String AccountName;
-boolean IsCredit;
+boolean Status;
+
 
 }
 }
