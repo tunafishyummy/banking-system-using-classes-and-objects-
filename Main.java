@@ -8,13 +8,21 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities; 
 
 public class Main {
-    public static void Main(String[] args){
-
-int BankNum, PinCode;
-double UserBal;
-String AccountName;
-boolean Status;
-
-
-}
+    public static JFrame window;
+    public static JPanel contentPanel;
+    
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            window = new JFrame("Banque");
+            window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            window.setSize(600, 400);
+            window.setLocationRelativeTo(null);
+            window.setVisible(true);
+            
+            int BankNum, PinCode;
+            double UserBal;
+            String AccountName;
+            boolean Status;
+        });
+    }
 }
