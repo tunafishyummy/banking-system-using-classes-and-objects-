@@ -1,0 +1,80 @@
+# =========================================================================
+# Compiled Java Source (Bytecode)
+# =========================================================================
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# =========================================================================
+# Maven Build Tool
+# =========================================================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+pom.xml.note
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# If you use the Maven Wrapper, keep the wrapper jar/properties but ignore errors
+!.mvn/wrapper/maven-wrapper.jar
+
+# =========================================================================
+# Gradle Build Tool
+# =========================================================================
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Cache fix for Gradle
+bin/
+inc/
+
+# =========================================================================
+# IntelliJ IDEA IDE
+# =========================================================================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# =========================================================================
+# Eclipse IDE
+# =========================================================================
+.metadata/
+.classpath
+.project
+.settings/
+*.launch
+*.factorypath
+
+# =========================================================================
+# NetBeans IDE
+# =========================================================================
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# =========================================================================
+# Operating System Specific (Optional but Recommended)
+# =========================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
