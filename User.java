@@ -1,51 +1,46 @@
 /*
- * Represents one registered bank user.
+ * One user is the login info plus the account that belongs to them
  */
 public class User {
 
-    // Store the user's username.
+    // This is the name the person types when they log in
     private final String username;
 
-    // Store the user's login PIN.
+    // This is the four-digit check that goes with the username
     private final String pin;
 
-    // Every user owns exactly one account.
+    // This is the one bank account this user owns
     private final Account account;
 
-    /*
-     * Creates a new user.
-     */
+    // Bank calls this after it has made both the login details and the account
     public User(String username, String pin, Account account) {
 
-        // Save the username.
+        // Keep the username so login can compare it later
         this.username = username;
 
-        // Save the PIN.
+        // Same saving idea as the username above, but for the PIN
         this.pin = pin;
 
-        // Save the user's account.
+        // Same saving idea as earlier, now connecting the account to its owner
         this.account = account;
 
     }
 
-    /*
-     * Returns the username.
-     */
+    // Bank and Main call this whenever they need to see the login name
     public String getUsername() {
+        // Give back the saved username
         return username;
     }
 
-    /*
-     * Returns the PIN.
-     */
+    // Bank uses this while checking whether a login is correct
     public String getPin() {
+        // Same return idea as the username getter above
         return pin;
     }
 
-    /*
-     * Returns the user's account.
-     */
+    // Main and Bank use this to reach the user's money and account number
     public Account getAccount() {
+        // Same return idea as the getters earlier
         return account;
     }
 
